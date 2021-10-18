@@ -1,10 +1,15 @@
-<mat-drawer-container class="example-container">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>
-    <p>ShareDoc</p>
-    <mat-card *ngFor="let icon of menuData">
-        <mat-icon aria-hidden="false" aria-label="Example home icon"> {{ icon.type }} </mat-icon>
-        <mat-card-title> {{icon.text}} </mat-card-title>
-    </mat-card>
-
-    <button mat-raised-button color="primary">Primary</button>
-</mat-drawer-container>
+    <div class="sidenav">
+        <p class="logo">ShareDoc</p>
+        <mat-card *ngFor="let icon of menuData">
+            <div class="icon">
+                <mat-icon aria-hidden="false" aria-label="Example home icon"> {{ icon.type }} </mat-icon>
+            </div>
+            
+            <mat-card-title> {{icon.text}} </mat-card-title>
+        </mat-card>
+        <div class="btn">
+            <button >Log Out</button>
+        </div>
+       
+    </div>
+    

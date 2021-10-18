@@ -1,5 +1,11 @@
-mat-drawer-container {
-  height: 100%;
-  width: 15%;
-  background-color: green;
+.sidenav {
+  padding: 1rem 3rem;
+  .logo,
+  .btn,
+  .icon,
+  mat-card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

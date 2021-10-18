@@ -11,20 +11,31 @@ import { IssuesComponent } from './issues/issues.component';
 import { ResolutionsComponent } from './resolutions/resolutions.component';
 import { CaseComponent } from './case/case.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    IssuesComponent,
+    ResolutionsComponent,
+    CaseComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
     MatSidenavModule,
     MatIconModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule
     
+  ],
+  exports: [
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

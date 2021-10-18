@@ -1,19 +1,8 @@
-<mat-grid-list cols="2">
-  <mat-grid-tile class="nav-container" fxFlex="20">
-      <div fxLayout="column">
-      <p>ShareDoc</p>
-      <mat-card *ngFor="let icon of menuData">
-        <button mat-raised-button color="primary">
-          <mat-icon> {{ icon.type }} </mat-icon>
-          <mat-card-title> {{icon.text}} </mat-card-title>
-        </button>
-      </mat-card>
-      <button mat-raised-button color="primary">Log Out</button>
-      </div>
-  </mat-grid-tile>
-
-  <mat-grid-tile class="page-container" fxFlex="80">
-    <h1>Hi</h1>
-  </mat-grid-tile>
-
-</mat-grid-list>
+<mat-drawer-container class="sidenav" >
+  <mat-drawer mode="side" opened >
+    <app-navbar ></app-navbar>
+  </mat-drawer>
+  <mat-drawer-content class="content">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

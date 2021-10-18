@@ -1,1 +1,23 @@
-<p>issues works!</p>
+<h1>Issues</h1>
+
+<mat-card fxLayout="row" fxLayoutAlign="space-between"> 
+    <div class="card" *ngFor = "let card of CARD" >
+        <p>{{ card.title}}</p>
+       <h4>{{ card.number }}</h4>
+    </div>
+
+    <div class="card">
+        <button>Submit Issue</button>
+    </div>
+</mat-card> 
+
+<mat-card>
+    <h2>Unsolved Issues</h2>
+    <div *ngFor="let caseData of CASE_DATA" fxLayout="row" fxLayoutAlign="space-between">
+        <p>N°</p>
+        <p>Date</p>
+        <p>Description</p>
+        <div> <button>Case Details</button> </div>
+    </div>
+    
+</mat-card>
