@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
 })
-export class AppComponent {
+export class NavbarComponent implements OnInit {
   showFiller = false;
 
   menuData = [
@@ -22,4 +22,10 @@ export class AppComponent {
       text: 'My Profile',
     },
   ]
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
 }
