@@ -1,1 +1,23 @@
-<p>resolutions works!</p>
+
+<h1>Resolutions</h1>
+
+<mat-card>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+        <p>N°</p>
+        <p>Date</p>
+        <p>Issue ID</p>
+        <p>Responsible Therapist</p>
+        <p>Status</p>
+        <div> <button>Resolution</button> </div>
+    </div>
+
+    <div *ngFor="let resolution of RESOLUTION" fxLayout="row" fxLayoutAlign="space-between">
+        <p>N°{{resolution.number}}</p>
+        <p>{{resolution.date}}</p>
+        <p>{{resolution.id}}</p>
+        <p>{{resolution.therapist}}</p>
+        <p>Solved</p>
+        <div> <button>Resolution</button> </div>
+    </div>
+
+</mat-card>

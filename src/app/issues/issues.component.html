@@ -1,4 +1,7 @@
-<h1>Issues</h1>
+<mat-card>
+    <h1>Issues</h1>
+</mat-card>
+
 
 <mat-card fxLayout="row" fxLayoutAlign="space-between"> 
     <div class="card" *ngFor = "let card of CARD" >
@@ -14,9 +17,10 @@
 <mat-card>
     <h2>Unsolved Issues</h2>
     <div *ngFor="let caseData of CASE_DATA" fxLayout="row" fxLayoutAlign="space-between">
-        <p>N°</p>
-        <p>Date</p>
-        <p>Description</p>
+        <p>N° {{caseData.number}} </p>
+        <p>Issue ID: {{caseData.id}}</p>
+        <p>Date: {{caseData.date}} </p>
+        <p>Description: {{caseData.description}} </p>
         <div> <button>Case Details</button> </div>
     </div>
     
