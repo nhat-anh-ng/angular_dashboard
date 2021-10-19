@@ -18,7 +18,9 @@
         <mat-grid-tile>Date: {{caseData.date}} </mat-grid-tile>
         <mat-grid-tile>Issue ID: {{caseData.id}}</mat-grid-tile>
         <mat-grid-tile>Description: {{caseData.description}} </mat-grid-tile>
-        <mat-grid-tile> <button>Case Details</button> </mat-grid-tile>
+        <mat-grid-tile> <button (click)="openDialog()">Case Details</button>
+</mat-grid-tile>
+
     
 </mat-grid-list>
 </mat-card>

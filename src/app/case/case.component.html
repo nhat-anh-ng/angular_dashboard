@@ -1,11 +1,22 @@
-<h1>Case Details</h1>
+<mat-dialog-actions fxLayoutAlign="end">
+    <button mat-button mat-dialog-close>X</button>
+</mat-dialog-actions>
 
-<mat-card>
-    <h2>Issue ID: NS796</h2>
-    <h2>Date: 21 / 08 / 20</h2>
-    <h2>Case description:</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quae aliquid at vel mollitia blanditiis quos nesciunt error modi magni! Vel earum adipisci impedit alias quidem vero praesentium incidunt porro?
-    </p>
-
-    <button>Provide Solution</button>
-</mat-card>
+<mat-dialog-content class="mat-typography">
+    <div fxLayout="row" fxLayoutGap="2rem">
+        
+        <h3>Issue ID: NS796</h3>
+        <h3>Date: 21 / 08 / 20</h3>
+    </div>
+    <h3 mat-dialog-title>Case Details:</h3>
+    <div fxLayoutAlign="center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quae aliquid at vel mollitia blanditiis quos nesciunt
+            error modi magni! Vel earum adipisci impedit alias quidem vero praesentium incidunt porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quae, tempora nobis, fuga hic nisi eum qui consectetur vitae quidem dolores aut totam impedit repellendus iure animi sequi fugit eos.
+        </p>
+    </div>
+    
+    <div fxLayoutAlign="center">
+        <button cdkFocusInitial >Provide Solution</button>
+    </div>
+    
+</mat-dialog-content>

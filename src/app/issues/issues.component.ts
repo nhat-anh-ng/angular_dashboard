@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { CaseComponent } from '../case/case.component';
 
 @Component({
   selector: 'app-issues',
@@ -86,7 +88,17 @@ export class IssuesComponent implements OnInit {
       id: 'SFH862',
     },
   ]
-  constructor() { }
+  
+    constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(CaseComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+  
 
   ngOnInit(): void {
   }

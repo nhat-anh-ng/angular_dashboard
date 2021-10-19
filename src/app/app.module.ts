@@ -13,6 +13,7 @@ import { CaseComponent } from './case/case.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatGridListModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDialogModule
     
   ],
   exports: [
     MatSidenavModule
   ],
+  entryComponents: [CaseComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
