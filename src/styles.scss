@@ -1,17 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap");
+* {
+  font-family: Montserrat, sans-serif;
+  h1 {
+    font-size: 52px;
+    font-weight: 600;
+    padding: 5rem 0rem 2rem 2rem;
+    color: #004aad;
+  }
+
+  button {
+    background-color: #38b6ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  button:focus {
+    background-color: #ff914d;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+  }
+}
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

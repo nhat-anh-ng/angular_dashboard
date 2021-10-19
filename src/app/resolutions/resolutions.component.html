@@ -1,23 +1,17 @@
-
+<div class="title">
 <h1>Resolutions</h1>
+</div>
+
 
 <mat-card>
-    <div fxLayout="row" fxLayoutAlign="space-between">
-        <p>N°</p>
-        <p>Date</p>
-        <p>Issue ID</p>
-        <p>Responsible Therapist</p>
-        <p>Status</p>
-        <div> <button>Resolution</button> </div>
-    </div>
-
-    <div *ngFor="let resolution of RESOLUTION" fxLayout="row" fxLayoutAlign="space-between">
-        <p>N°{{resolution.number}}</p>
-        <p>{{resolution.date}}</p>
-        <p>{{resolution.id}}</p>
-        <p>{{resolution.therapist}}</p>
-        <p>Solved</p>
-        <div> <button>Resolution</button> </div>
-    </div>
+   
+    <mat-grid-list cols="6" rowHeight="4:1" *ngFor="let resolution of RESOLUTION" fxLayout="row" fxLayoutAlign="space-between center" class="data" >
+        <mat-grid-tile>N°{{resolution.number}}</mat-grid-tile>
+        <mat-grid-tile>{{resolution.date}}</mat-grid-tile>
+        <mat-grid-tile>Issue ID: {{resolution.id}}</mat-grid-tile>
+        <mat-grid-tile>Doc ID: {{resolution.therapist}}</mat-grid-tile>
+        <mat-grid-tile>Solved</mat-grid-tile>
+        <mat-grid-tile> <button>Resolution</button> </mat-grid-tile>
+    </mat-grid-list>
 
 </mat-card>
