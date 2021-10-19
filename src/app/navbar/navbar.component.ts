@@ -12,14 +12,17 @@ export class NavbarComponent implements OnInit {
     {
       type: 'report_problem',
       text: 'Issues',
+      link: '',
     },
     {
       type: 'task_alt',
       text: 'Resolutions',
+      link: 'resolutions',
     },
     {
       type: 'perm_identity',
       text: 'My Profile',
+      link: 'profile',
     },
   ]
 

@@ -1,8 +1,8 @@
     <div class="sidenav">
         <p class="logo">ShareDoc</p>
         <mat-card *ngFor="let icon of menuData">
-            <div class="icon">
-                <mat-icon aria-hidden="false" aria-label="Example home icon"> {{ icon.type }} </mat-icon>
+            <div class="icon"> 
+                <a routerLink="{{icon.link}}" routerLinkActive="active"><mat-icon > {{ icon.type }} </mat-icon></a>
             </div>
             
             <mat-card-title> {{icon.text}} </mat-card-title>
