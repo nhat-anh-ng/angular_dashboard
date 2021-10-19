@@ -3,25 +3,22 @@
 <h1>Issues</h1>
 </div>
 
-<div fxLayout="row" fxLayoutAlign="space-between"> 
-    <mat-card class="card" *ngFor = "let card of CARD" >
-        <p>{{ card.title}}</p>
-       <h4>{{ card.number }}</h4>
+<div fxLayout="row" fxLayoutAlign="space-between" class="cards" > 
+    <mat-card *ngFor = "let card of CARD" class="card">
+        <h3>{{ card.title}}</h3>
+       <h4 fxLayoutAlign="center center" >{{ card.number }}</h4>
     </mat-card>
 
-    <div class="card">
-        <button>Submit Issue</button>
-    </div>
 </div> 
 
 <mat-card>
-    <h2>Unsolved Issues</h2>
-    <div *ngFor="let caseData of CASE_DATA" fxLayout="row" fxLayoutAlign="space-between">
-        <p>N° {{caseData.number}} </p>
-        <p>Issue ID: {{caseData.id}}</p>
-        <p>Date: {{caseData.date}} </p>
-        <p>Description: {{caseData.description}} </p>
-        <div> <button>Case Details</button> </div>
-    </div>
+<mat-grid-list cols="5" rowHeight="4:1" fxLayout="row" *ngFor="let caseData of CASE_DATA"  fxLayoutAlign="space-between center" class="case_table">
+  
+        <mat-grid-tile>N° {{caseData.number}} </mat-grid-tile>
+        <mat-grid-tile>Date: {{caseData.date}} </mat-grid-tile>
+        <mat-grid-tile>Issue ID: {{caseData.id}}</mat-grid-tile>
+        <mat-grid-tile>Description: {{caseData.description}} </mat-grid-tile>
+        <mat-grid-tile> <button>Case Details</button> </mat-grid-tile>
     
+</mat-grid-list>
 </mat-card>

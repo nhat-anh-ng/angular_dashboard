@@ -19,6 +19,11 @@ export class IssuesComponent implements OnInit {
      
     },
     {
+      title: 'Issues Unsolved',
+      number: 592,
+    
+    },
+    {
       title: 'Total Contributions',
       number: 128,
     
@@ -40,6 +45,24 @@ export class IssuesComponent implements OnInit {
     },
     { 
       number: 3,
+      date: '01/10/21',
+      description: 'gdrgsdfgsdfggsgf',
+      id: 'SFH862',
+    },
+    { 
+      number: 4,
+      date: '01/10/21',
+      description: 'gdrgsdfgsdfggsgf',
+      id: 'SFH862',
+    },
+    { 
+      number: 5,
+      date: '01/10/21',
+      description: 'gdrgsdfgsdfggsgf',
+      id: 'SFH862',
+    },
+    { 
+      number: 6,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',

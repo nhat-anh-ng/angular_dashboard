@@ -7,7 +7,7 @@
    
     <mat-grid-list cols="6" rowHeight="4:1" *ngFor="let resolution of RESOLUTION" fxLayout="row" fxLayoutAlign="space-between center" class="data" >
         <mat-grid-tile>N°{{resolution.number}}</mat-grid-tile>
-        <mat-grid-tile>{{resolution.date}}</mat-grid-tile>
+        <mat-grid-tile>Date: {{resolution.date}}</mat-grid-tile>
         <mat-grid-tile>Issue ID: {{resolution.id}}</mat-grid-tile>
         <mat-grid-tile>Doc ID: {{resolution.therapist}}</mat-grid-tile>
         <mat-grid-tile>Solved</mat-grid-tile>
