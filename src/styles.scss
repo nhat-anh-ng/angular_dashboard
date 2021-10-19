@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap");
+
 * {
+  .material-icons {
+    font-family: "Material Icons";
+  }
   font-family: Montserrat, sans-serif;
   h1 {
     font-size: 52px;
     font-weight: 600;
-    padding: 5rem 0rem 2rem 2rem;
+    padding: 3rem 0rem 2rem 2rem;
     color: #004aad;
     font-family: Montserrat;
   }

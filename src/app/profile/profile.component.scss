@@ -1,0 +1,17 @@
+@import "/Users/codena/Desktop/angular/src/styles.scss";
+
+.cards {
+  margin: 2rem 8rem;
+}
+.card {
+  width: 160px;
+  height: 110px;
+  cursor: pointer;
+  mat-icon {
+    color: #004aad;
+  }
+}
+mat-card:hover {
+  transition: 1s;
+  background-color: #ff914d;
+}

@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
     {
       type: 'perm_identity',
       text: 'My Profile',
-      link: 'profile',
+      link: 'my_profile',
     },
   ]
 

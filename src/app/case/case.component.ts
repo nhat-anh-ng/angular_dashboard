@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./case.component.scss']
 })
 export class CaseComponent implements OnInit {
-
+  
+    
   constructor() { }
 
   ngOnInit(): void {

@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
+import { ProfileComponent } from './profile/profile.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {MatInputModule} from '@angular/material/input';
     NavbarComponent,
     IssuesComponent,
     ResolutionsComponent,
-    CaseComponent
+    CaseComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    MatFormFieldModule,
     
   ],
   exports: [

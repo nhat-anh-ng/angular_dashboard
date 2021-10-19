@@ -1,0 +1,19 @@
+<div>
+    <h1>My Profile</h1>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-between" class="cards">
+    <mat-card *ngFor="let card of CARD1" class="card" fxLayoutAlign="center center">
+        <mat-icon > {{card.icon}}</mat-icon>
+        <h3 fxLayoutAlign="center center">{{ card.title}}</h3>
+    </mat-card>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-between" class="cards">
+    <mat-card *ngFor="let card of CARD2" class="card" fxLayoutAlign="center center">
+        <mat-icon> {{card.icon}}</mat-icon>
+        <h3 fxLayoutAlign="center center">{{ card.title}}</h3>
+    </mat-card>
+</div>
+      
+ 
