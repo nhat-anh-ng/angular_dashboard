@@ -14,9 +14,16 @@
             error modi magni! Vel earum adipisci impedit alias quidem vero praesentium incidunt porro? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quae, tempora nobis, fuga hic nisi eum qui consectetur vitae quidem dolores aut totam impedit repellendus iure animi sequi fugit eos.
         </p>
     </div>
+    <h3 mat-dialog-title>Solution:</h3>
+    <form>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+    </form>
     
     <div fxLayoutAlign="center">
-        <button cdkFocusInitial >Provide Solution</button>
+        <button cdkFocusInitial mat-dialog-close >Provide Solution</button>
     </div>
     
 </mat-dialog-content>

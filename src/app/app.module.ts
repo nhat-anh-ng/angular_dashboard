@@ -14,6 +14,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatGridListModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
     
   ],
   exports: [
