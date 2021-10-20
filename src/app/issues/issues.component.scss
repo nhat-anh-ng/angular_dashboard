@@ -1,11 +1,27 @@
-@import "/Users/codena/Desktop/angular/src/styles.scss";
 .card {
   margin: 0rem 2rem 2rem 2rem;
   border: thick double #ecf8ff;
 }
-
 mat-card {
   overflow-y: scroll;
   max-height: 50vh;
   margin-left: 2rem;
+}
+h1 {
+  font-size: 52px;
+  font-weight: 600;
+  padding: 3rem 0rem 2rem 2rem;
+  color: #004aad;
+  font-family: Montserrat;
+}
+h3 {
+  font-size: 18px;
+  color: #004aad;
+  font-family: Montserrat;
+}
+h4 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #38b6ff;
+  font-family: Montserrat;
 }

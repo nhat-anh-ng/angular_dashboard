@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap");
-
 * {
   .material-icons {
     font-family: "Material Icons";
@@ -14,26 +12,22 @@
     color: #004aad;
     font-family: Montserrat;
   }
-
   h3 {
     font-size: 18px;
     color: #004aad;
     font-family: Montserrat;
   }
-
   h4 {
     font-size: 28px;
     font-weight: bold;
     color: #38b6ff;
     font-family: Montserrat;
   }
-
   mat-grid-tile {
     padding: 0.5rem 0rem;
     margin: 0.5rem 0rem;
     border-bottom: solid 0.001rem #ecf8ff;
   }
-
   button {
     background-color: #38b6ff;
     border: none;
@@ -44,13 +38,11 @@
     cursor: pointer;
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.08);
   }
-
   button:focus {
     background-color: #ff914d;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.08);
     transition: all 0.5s;
   }
-
   a {
     text-decoration: none;
     color: #004aad;
