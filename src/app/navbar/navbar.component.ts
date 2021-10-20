@@ -16,8 +16,8 @@ export class NavbarComponent implements OnInit {
     },
     {
       type: 'task_alt',
-      text: 'Resolutions',
-      link: 'resolutions',
+      text: 'Solutions',
+      link: 'solutions',
     },
     {
       type: 'perm_identity',

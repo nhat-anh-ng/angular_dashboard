@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { SolutionComponent } from '../solution/solution.component';
 
 @Component({
   selector: 'app-resolutions',
@@ -92,7 +94,15 @@ export class ResolutionsComponent implements OnInit {
       id: 'SFH862',
     },
   ];
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(SolutionComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
 <div class="title">
-<h1>Resolutions</h1>
+<h1>Solutions</h1>
 </div>
 <mat-card>
    
@@ -9,7 +9,7 @@
         <mat-grid-tile>Issue ID: {{resolution.id}}</mat-grid-tile>
         <mat-grid-tile>Doc ID: {{resolution.therapist}}</mat-grid-tile>
         <mat-grid-tile>Solved</mat-grid-tile>
-        <mat-grid-tile> <button>Resolution</button> </mat-grid-tile>
+        <mat-grid-tile> <button (click)="openDialog()">Solution</button> </mat-grid-tile>
     </mat-grid-list>
 
 </mat-card>

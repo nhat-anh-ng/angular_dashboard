@@ -17,6 +17,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import { ProfileComponent } from './profile/profile.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { SolutionComponent } from './solution/solution.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     IssuesComponent,
     ResolutionsComponent,
     CaseComponent,
-    ProfileComponent
+    ProfileComponent,
+    SolutionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,14 +1,21 @@
     <div class="sidenav">
-        <p class="logo">ShareDoc</p>
-        <mat-card *ngFor="let icon of menuData">
-            <div class="icon"> 
-                <a routerLink="{{icon.link}}" routerLinkActive="active"><mat-icon > {{ icon.type }} </mat-icon></a>
-            </div>
-    
-            <mat-card-title> {{icon.text}} </mat-card-title>
+        <p fxLayoutAlign="center" class="logo">ShareDoc</p>
+
+        <mat-card fxLayoutAlign="center" *ngFor="let icon of menuData">
+           
+                <a  routerLink="{{icon.link}}" routerLinkActive="active">
+                    <div fxLayoutAlign="center" class="icon">
+                        <mat-icon> {{ icon.type }} </mat-icon>
+                    </div>
+                    
+                    <mat-card-title>
+                       {{icon.text}}
+                    </mat-card-title>
+                </a>
+           
         </mat-card>
 
-        <div class="btn">
+        <div class="btn" fxLayoutAlign="center">
             <button>Log Out</button>
         </div>
     </div>

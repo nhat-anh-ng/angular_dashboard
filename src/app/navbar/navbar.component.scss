@@ -1,16 +1,30 @@
 .sidenav {
-  padding: 1rem 3rem;
-  .logo,
-  .btn,
-  .icon,
-  mat-card-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  padding: 0rem 2rem;
 }
-
+.logo {
+  margin: 1.5rem 0rem;
+  font-size: 22px;
+  color: #004aad;
+}
+mat-card-title {
+  font-size: 14px;
+}
+mat-card {
+  margin: 2rem 0rem;
+  border-radius: 10rem;
+}
+mat-card:hover {
+  background-color: #ff914d;
+  transition: 1s;
+}
+.icon {
+  padding-bottom: 0.5rem;
+}
 button:focus {
   background-color: rgb(194, 194, 194);
   transition: 1s;
+}
+
+a:hover {
+  color: white;
 }
