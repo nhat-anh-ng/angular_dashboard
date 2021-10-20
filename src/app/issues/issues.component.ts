@@ -40,56 +40,56 @@ export class IssuesComponent implements OnInit {
       id: 'SFH862',
     },
     { 
-      number: 2,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 3,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 4,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 5,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 6,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 4,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 5,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
     { 
-      number: 6,
+      number: 1,
       date: '01/10/21',
       description: 'gdrgsdfgsdfggsgf',
       id: 'SFH862',
     },
   ]
   
-    constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     const dialogRef = this.dialog.open(CaseComponent);
